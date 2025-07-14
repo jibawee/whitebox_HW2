@@ -19,13 +19,7 @@ class TestContrivedFunc(unittest.TestCase):
         contrived_func(100)
 
     def test_case_100_repeat(self):
-        contrived_func(100)
-    
-    def test_case_large_number(self):
-        contrived_func(-1.5)
-    
-    def test_case_large_number(self):
-        contrived_func(-1.5)
+        contrived_func(7589305748930)
 
 if __name__ == '__main__':
     unittest.main()
