@@ -3,17 +3,14 @@ from contrived_func import contrived_func
 
 
 class TestContrivedFunc(unittest.TestCase):
-    def test_case_0(self):  # a=T, b=F, c=F, d=T
+    def test_case_1(self):  # a=T, b=F, c=F, d=T
         contrived_func(0)
 
-    def test_case_1(self):  # a=T, b=T, c=F, d=T
+    def test_case_2(self):  # a=T, b=T, c=F, d=T
         contrived_func(1)
 
-    def test_case_2(self):  # a=T, b=F, c=F, d=F
+    def test_case_3(self):  # a=T, b=F, c=F, d=F
         contrived_func(3)
-
-    def test_case_3(self):  # a=T, b=F, c=F, d=F - perhaps remove?
-        contrived_func(6)
 
     def test_case_4(self):  # a=F, b=T, c=F, d=F
         contrived_func(20)
@@ -23,6 +20,12 @@ class TestContrivedFunc(unittest.TestCase):
 
     def test_case_6(self):  # a=F, b=F, c=T, d=T
         contrived_func(-20)
+
+    def test_case_7(self):  # a=F, b=F, c=T, d=F ... (a V c) = F, (b V c) = T
+        contrived_func(60)
+
+    def test_case_8(self):  # a=F, b=F, c=F, d=F
+        contrived_func(15)
 
 
 if __name__ == "__main__":
