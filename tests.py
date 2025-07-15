@@ -21,11 +21,11 @@ class TestContrivedFunc(unittest.TestCase):
     def test_case_6(self):  # a=F, b=F, c=T, d=T
         contrived_func(-20)
 
-    def test_case_7(self):  # a=F, b=T, c=T, d=F
-        contrived_func(42)
+    def test_case_7(self):  # a=F, b=F, c=F, d=F
+        contrived_func(15)
 
     def test_case_8(self):  # a=F, b=F, c=F, d=F
-        contrived_func(15)
+        contrived_func(0.0001)
 
 
 if __name__ == "__main__":
